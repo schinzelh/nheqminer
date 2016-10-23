@@ -25,7 +25,7 @@ Under Ubuntu open a terminal and run the following commands:
 ## Linux (Ubuntu/Debian based, Tested on Ubuntu 16.04):
 To build under Ubuntu Linux make sure you have Qt5 installed. You can install it manually from [Qt website](https://www.qt.io/) or install it from the command line: `sudo apt-get install qt5-default`.
 Open a terminal and cd to nheqminer root folder and run the following commands (make sure you have qmake in your PATH, if installed manually from Qt website you will have to export it to your PATH):
-  - `git clone https://github.com/nicehash/nheqminer.git`
+  - `git clone https://github.com/ocminer/nheqminer.git`
   - `cd nheqminer`
   - `mkdir build`
   - `cd build`
@@ -56,10 +56,10 @@ Example to run with full logging (including network dump):
         
 Example to mine with your own BTC address and worker1 on USA server:
 
-        nheqminer_x64_AVX.exe -l usa -u YOUR_BTC_ADDRESS_HERE.worker1
+        nheqminer_x64_AVX.exe -l zec.suprnova.cc:2142 -u username.workername -p x
 
 Example to mine with your own BTC address and worker1 on EU server, using 6 threads:
 
-        nheqminer_x64_AVX.exe -l eu -u YOUR_BTC_ADDRESS_HERE.worker1 -t 6
+        nheqminer_x64_AVX.exe -l zec.suprnova.cc:2142 -u username.workername -p x-t 6
 
 <i>Note: if you have a 4-core CPU with hyper threading enabled (total 8 threads) it is best to run with only 6 threads (experimental benchmarks shows that best results are achieved with 75% threads utilized)</i>
